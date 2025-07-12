@@ -8,7 +8,7 @@ https://work.mercor.com/jobs/list_AAABl_AbLDSljFYhEMZKaLk9?referralCode=fcfd4f54
 * Creative Writing Analyst ( 50$/hr )  
 https://work.mercor.com/jobs/list_AAABl_hsjkVj6l_4vVlO-I5K?referralCode=fcfd4f54-0831-4ecc-9853-58e46daa23bc&utm_source=referral&utm_medium=share&utm_campaign=job_referral
 
-* Hobbyist Expert ($50+/hour)
+* Hobbyist Expert ($50+/hour)  
 https://work.mercor.com/jobs/list_AAABk6JUwOKNjzmaPoNPv53D?referralCode=fcfd4f54-0831-4ecc-9853-58e46daa23bc&utm_source=referral&utm_medium=share&utm_campaign=job_referral
 
 ## Typing / Data Entry $10~$30
