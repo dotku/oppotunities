@@ -13,7 +13,7 @@ https://work.mercor.com/jobs/list_AAABk6JUwOKNjzmaPoNPv53D?referralCode=fcfd4f54
 
 ## Typing / Data Entry $10~$30
 
-* Word Processors and Typists
+* Word Processors and Typists  
 https://work.mercor.com/jobs/list_AAABl-uSNLrszsoTQb9IvKDi?referralCode=fcfd4f54-0831-4ecc-9853-58e46daa23bc&utm_source=referral&utm_medium=share&utm_campaign=job_referral
 
 ## Office
