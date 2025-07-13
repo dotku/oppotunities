@@ -10,13 +10,13 @@ https://work.mercor.com/jobs/list_AAABk6JUwOKNjzmaPoNPv53D?referralCode=fcfd4f54
 
 ## Finance
 
-* Finance Expert
+* Finance Expert  
 https://work.mercor.com/jobs/list_AAABl_tLsrzgl--uCnJNyqfu?referralCode=fcfd4f54-0831-4ecc-9853-58e46daa23bc&utm_source=referral&utm_medium=share&utm_campaign=job_referral
 
-* Elite Finance Expert
+* Elite Finance Expert  
 https://work.mercor.com/jobs/list_AAABl_ePtRffEJ5_sDJPU4xs?referralCode=fcfd4f54-0831-4ecc-9853-58e46daa23bc&utm_source=referral&utm_medium=share&utm_campaign=job_referral
 
-* Financial Specialists
+* Financial Specialists  
 https://work.mercor.com/jobs/list_AAABl-bnth9mDcjXTt5ABZ7s?referralCode=fcfd4f54-0831-4ecc-9853-58e46daa23bc&utm_source=referral&utm_medium=share&utm_campaign=job_referral
 
 ## Accountant
