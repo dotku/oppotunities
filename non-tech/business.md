@@ -11,15 +11,15 @@ https://work.mercor.com/jobs/list_AAABl-bnth9mDcjXTt5ABZ7s?referralCode=fcfd4f54
 
 ## Accountant
 
-* Tax Preparers ($20~40/hr)
+* Tax Preparers ($20~40/hr)  
 https://work.mercor.com/jobs/list_AAABl-tmY7ZK0-SmzdFAWZsl?referralCode=fcfd4f54-0831-4ecc-9853-58e46daa23bc&utm_source=referral&utm_medium=share&utm_campaign=job_referral
 
 ## Consulting 
 
-* Consulting Professional 专业顾问 ($80~110/hr) 
+* Consulting Professional 专业顾问 ($80~110/hr)  
 https://work.mercor.com/jobs/list_AAABl_AbLDSljFYhEMZKaLk9?referralCode=fcfd4f54-0831-4ecc-9853-58e46daa23bc&utm_source=referral&utm_medium=share&utm_campaign=job_referral
 
-* Investment Services Professional 专业业投资 ($90~120/hr)
+* Investment Services Professional 专业业投资 ($90~120/hr)  
 https://work.mercor.com/jobs/list_AAABl_AGb9Xvf8Spjg5Pqayv?referralCode=fcfd4f54-0831-4ecc-9853-58e46daa23bc&utm_source=referral&utm_medium=share&utm_campaign=job_referral
 
 ## Office
