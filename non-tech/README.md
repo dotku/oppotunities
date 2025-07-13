@@ -32,7 +32,6 @@ https://work.mercor.com/jobs/list_AAABl_AbLDSljFYhEMZKaLk9?referralCode=fcfd4f54
 * Investment Services Professional
 https://work.mercor.com/jobs/list_AAABl_AGb9Xvf8Spjg5Pqayv?referralCode=fcfd4f54-0831-4ecc-9853-58e46daa23bc&utm_source=referral&utm_medium=share&utm_campaign=job_referral
 
-
 ## Typing / Data Entry $10~$30
 
 * Word Processors and Typists  
