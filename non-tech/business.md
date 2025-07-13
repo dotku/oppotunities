@@ -27,7 +27,7 @@ https://work.mercor.com/jobs/list_AAABl_AGb9Xvf8Spjg5Pqayv?referralCode=fcfd4f54
 * Word Processors and Typists  
 https://work.mercor.com/jobs/list_AAABl-uSNLrszsoTQb9IvKDi?referralCode=fcfd4f54-0831-4ecc-9853-58e46daa23bc&utm_source=referral&utm_medium=share&utm_campaign=job_referral
 
-## Business
+## Office
 
 * Office Clerks  
 https://work.mercor.com/jobs/list_AAABl-uV_YEYzVKuKktNnaXI?referralCode=fcfd4f54-0831-4ecc-9853-58e46daa23bc&utm_source=referral&utm_medium=share&utm_campaign=job_referral
@@ -37,9 +37,6 @@ https://work.mercor.com/jobs/list_AAABl-uKq0y17GRkFidDKqO3?referralCode=fcfd4f54
 
 * Office and Administrative Support Workers  
 https://work.mercor.com/jobs/list_AAABl-uHOM2dYLjwLaRG2rH_?referralCode=fcfd4f54-0831-4ecc-9853-58e46daa23bc&utm_source=referral&utm_medium=share&utm_campaign=job_referral
-
-* Interpreters and Translators  
-https://work.mercor.com/jobs/list_AAABl-rSnOpm3sZ_rOBNg6Hu?referralCode=fcfd4f54-0831-4ecc-9853-58e46daa23bc&utm_source=referral&utm_medium=share&utm_campaign=job_referral
 
 * Technical Writers  
 https://work.mercor.com/jobs/list_AAABl-cDLEscBEuimrZEQbew?referralCode=fcfd4f54-0831-4ecc-9853-58e46daa23bc&utm_source=referral&utm_medium=share&utm_campaign=job_referral
@@ -51,6 +48,9 @@ https://work.mercor.com/jobs/list_AAABl-bxmqnOQdwZZ1FCd7cn?referralCode=fcfd4f54
 
 * Editors  
 https://work.mercor.com/jobs/list_AAABl-bsYTr9RRpUeflFP7J2?referralCode=fcfd4f54-0831-4ecc-9853-58e46daa23bc&utm_source=referral&utm_medium=share&utm_campaign=job_referral
+
+* Interpreters and Translators  
+https://work.mercor.com/jobs/list_AAABl-rSnOpm3sZ_rOBNg6Hu?referralCode=fcfd4f54-0831-4ecc-9853-58e46daa23bc&utm_source=referral&utm_medium=share&utm_campaign=job_referral
 
 ## Human Resource
 
