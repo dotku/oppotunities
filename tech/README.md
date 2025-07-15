@@ -2,19 +2,19 @@
 
 ## IT
 
-Software Engineers (5+ yrs) ($80 - $95 / hour)
+Software Engineers (5+ yrs) ($80 - $95 / hour)  
 https://work.mercor.com/jobs/list_AAABl-0rxVm-06ywL49JVq3q?referralCode=fcfd4f54-0831-4ecc-9853-58e46daa23bc&utm_source=referral&utm_medium=share&utm_campaign=job_referral
 
-Technical Support Engineer (United States and Canada) ($40 ~ $50 / hour)
+Technical Support Engineer (United States and Canada) ($40 ~ $50 / hour)  
 https://work.mercor.com/jobs/list_AAABl-v7uVPvx3U1Nx9PAK6Q?referralCode=fcfd4f54-0831-4ecc-9853-58e46daa23bc&utm_source=referral&utm_medium=share&utm_campaign=job_referral
 
-Computer User Support Specialists ($25 - $45 / hour)
+Computer User Support Specialists ($25 - $45 / hour)  
 https://work.mercor.com/jobs/list_AAABl-rWtJaRoPQigxpNUpYE?referralCode=fcfd4f54-0831-4ecc-9853-58e46daa23bc&utm_source=referral&utm_medium=share&utm_campaign=job_referral
 
-Computer Network Support Specialists ($35 - $55 / hour)
+Computer Network Support Specialists ($35 - $55 / hour)  
 https://work.mercor.com/jobs/list_AAABl-qd-oTPjbejoSxLb5Vu?referralCode=fcfd4f54-0831-4ecc-9853-58e46daa23bc&utm_source=referral&utm_medium=share&utm_campaign=job_referral
 
-Technical Writers ($40 - $60 / hour)
+Technical Writers ($40 - $60 / hour)  
 https://work.mercor.com/jobs/list_AAABl-cDLEscBEuimrZEQbew?referralCode=fcfd4f54-0831-4ecc-9853-58e46daa23bc&utm_source=referral&utm_medium=share&utm_campaign=job_referral
 
 ## Recruiter
