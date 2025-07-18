@@ -1,5 +1,19 @@
 # tech
 
+## Data
+
+Data Science  
+https://work.mercor.com/jobs/list_AAABl9CfvnKbvKlaW0BCB5gX?referralCode=fcfd4f54-0831-4ecc-9853-58e46daa23bc&utm_source=referral&utm_medium=share&utm_campaign=job_referral
+
+Database Administrators  
+https://work.mercor.com/jobs/list_AAABl9FgAQFwq0HQuhNEGrzE?referralCode=fcfd4f54-0831-4ecc-9853-58e46daa23bc&utm_source=referral&utm_medium=share&utm_campaign=job_referral
+
+Database Architects  
+https://work.mercor.com/jobs/list_AAABl9BkNF1VBxp6f_RI44bR?referralCode=fcfd4f54-0831-4ecc-9853-58e46daa23bc&utm_source=referral&utm_medium=share&utm_campaign=job_referral
+
+Data Science Expert (PhD)  
+https://work.mercor.com/jobs/list_AAABl7BIu9bANNhWoQlBGZXc?referralCode=fcfd4f54-0831-4ecc-9853-58e46daa23bc&utm_source=referral&utm_medium=share&utm_campaign=job_referral
+
 ## IT
 
 Software Engineers (5+ yrs) ($80 - $95 / hour)  
@@ -35,6 +49,5 @@ https://work.mercor.com/jobs/list_AAABl_-0Mw9vsHyBEWRB1qST?referralCode=fcfd4f54
 
 Chemical Engineering PhD (STEM) ($20 - $50 / hour)
 https://work.mercor.com/jobs/list_AAABl_-RKxlxIR9o-J5PJoX7?referralCode=fcfd4f54-0831-4ecc-9853-58e46daa23bc&utm_source=referral&utm_medium=share&utm_campaign=job_referral
-
 
 
