@@ -36,7 +36,7 @@
 
 [Chemical Engineering PhD (STEM) ($20 - $50 / hour)](https://work.mercor.com/jobs/list_AAABl_-RKxlxIR9o-J5PJoX7?referralCode=fcfd4f54-0831-4ecc-9853-58e46daa23bc&utm_source=referral&utm_medium=share&utm_campaign=job_referral)
 
-## Robootics
+## Robotics
 
 [Robotics Expert](https://work.mercor.com/jobs/list_AAABl8fuL3PQGYpitp9EeqFd?referralCode=fcfd4f54-0831-4ecc-9853-58e46daa23bc&utm_source=referral&utm_medium=share&utm_campaign=job_referral)
 
