@@ -1,0 +1,393 @@
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Hero Section */
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.heroContent {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.heroSubtitle {
+  font-size: 1.3rem;
+  margin-bottom: 3rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+
+.searchSection {
+  margin-top: 2rem;
+}
+
+.searchBox {
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 12px;
+  padding: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  gap: 8px;
+}
+
+.searchInput {
+  flex: 2;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+.categorySelect {
+  flex: 1;
+  padding: 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  background: #f8f9fa;
+  outline: none;
+  cursor: pointer;
+}
+
+.searchBtn {
+  padding: 16px 32px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.searchBtn:hover:not(:disabled) {
+  background: #218838;
+}
+
+.searchBtn:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+}
+
+/* Stats Section */
+.statsSection {
+  padding: 60px 20px;
+  background: white;
+}
+
+.statsContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.statCard {
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.statCard:hover {
+  transform: translateY(-5px);
+}
+
+.statNumber {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.statLabel {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  font-weight: 500;
+}
+
+/* Featured Section */
+.featuredSection {
+  padding: 80px 20px;
+  background: #f8f9fa;
+}
+
+.sectionContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #333;
+  font-weight: 600;
+}
+
+.opportunitiesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.opportunityCard {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid #e9ecef;
+}
+
+.opportunityCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.jobTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  flex: 1;
+}
+
+.jobType {
+  background: #e3f2fd;
+  color: #1976d2;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.companyInfo {
+  margin-bottom: 15px;
+}
+
+.company {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #666;
+  margin: 0 0 5px 0;
+}
+
+.location {
+  color: #888;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.jobDetails {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.category, .experience {
+  background: #f1f3f4;
+  color: #5f6368;
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.salary {
+  color: #28a745;
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.jobDescription {
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+.applyBtn {
+  width: 100%;
+  padding: 12px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.applyBtn:hover {
+  background: #5a67d8;
+}
+
+/* CTA Section */
+.ctaSection {
+  padding: 80px 20px;
+  background: white;
+}
+
+.ctaContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
+}
+
+.ctaCard {
+  text-align: center;
+  padding: 40px 30px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.ctaIcon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.ctaCard h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #333;
+  font-weight: 600;
+}
+
+.ctaCard p {
+  color: #666;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.ctaBtn {
+  padding: 15px 30px;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.ctaBtn:hover {
+  background: #555;
+}
+
+/* Footer */
+.footer {
+  background: #2c3e50;
+  color: white;
+  padding: 50px 20px 20px;
+}
+
+.footerContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.footerSection h4 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.footerLink {
+  display: block;
+  color: #bdc3c7;
+  text-decoration: none;
+  margin-bottom: 8px;
+  transition: color 0.3s;
+}
+
+.footerLink:hover {
+  color: white;
+}
+
+.footerBottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
+  border-top: 1px solid #34495e;
+  text-align: center;
+  color: #bdc3c7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+  
+  .heroSubtitle {
+    font-size: 1.1rem;
+  }
+  
+  .searchBox {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .searchInput, .categorySelect, .searchBtn {
+    width: 100%;
+  }
+  
+  .opportunitiesGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .ctaContainer {
+    grid-template-columns: 1fr;
+  }
+  
+  .statsContainer {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  .footerContent {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
