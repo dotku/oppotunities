@@ -168,13 +168,17 @@ export default function Home() {
             <div className={styles.ctaIcon}>👤</div>
             <h3>For Job Seekers</h3>
             <p>Discover thousands of opportunities from top companies. Create your profile and get matched with your ideal role.</p>
-            <button className={styles.ctaBtn}>Browse Jobs</button>
+            <Link href="/opportunities">
+              <button className={styles.ctaBtn}>Browse Jobs</button>
+            </Link>
           </div>
           <div className={styles.ctaCard}>
             <div className={styles.ctaIcon}>🏢</div>
             <h3>For Employers</h3>
-            <p>Find the perfect candidates for your team. Post jobs and connect with talented professionals.</p>
-            <button className={styles.ctaBtn}>Post a Job</button>
+            <p>Find the perfect candidates for your team. Register your company to start posting jobs.</p>
+            <Link href="/employer/register">
+              <button className={styles.ctaBtn}>Register Company</button>
+            </Link>
           </div>
         </div>
       </section>
@@ -196,6 +200,7 @@ export default function Home() {
           <div className={styles.footerSection}>
             <h4>Support</h4>
             <a href="/privacy" className={styles.footerLink}>Privacy Policy</a>
+            <a href="/terms" className={styles.footerLink}>Terms of Service</a>
           </div>
         </div>
         <div className={styles.footerBottom}>

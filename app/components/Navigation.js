@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Menu, X, Briefcase, FileText, BarChart3 } from 'lucide-react';
+import { Menu, X, Briefcase, FileText } from 'lucide-react';
 import styles from './Navigation.module.css';
 
 export default function Navigation() {
@@ -27,20 +27,14 @@ export default function Navigation() {
           <Link href="/opportunities" className={styles.navLink} onClick={() => setIsMenuOpen(false)}>
             Browse Jobs
           </Link>
+          <Link href="/employer/register" className={styles.navLink} onClick={() => setIsMenuOpen(false)}>
+            <Briefcase size={16} />
+            For Employers
+          </Link>
           <Link href="/docs/api" className={styles.navLink} onClick={() => setIsMenuOpen(false)}>
             <FileText size={16} />
             API Docs
           </Link>
-          <a 
-            href="/api/stats" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className={styles.navLink}
-            onClick={() => setIsMenuOpen(false)}
-          >
-            <BarChart3 size={16} />
-            API Stats
-          </a>
         </div>
 
         <button 

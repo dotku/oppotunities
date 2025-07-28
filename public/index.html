@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opportunities API Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .endpoint {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+        }
+        .endpoint h3 {
+            margin-top: 0;
+            color: #0066cc;
+        }
+        .method {
+            background: #28a745;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .url {
+            font-family: monospace;
+            background: #e9ecef;
+            padding: 5px;
+            border-radius: 3px;
+            margin: 5px 0;
+        }
+        .test-btn {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .test-btn:hover {
+            background: #0056b3;
+        }
+        .response {
+            background: #f1f3f4;
+            border: 1px solid #dadce0;
+            border-radius: 4px;
+            padding: 10px;
+            margin-top: 10px;
+            max-height: 300px;
+            overflow-y: auto;
+            font-family: monospace;
+            font-size: 12px;
+            white-space: pre-wrap;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .stat-card {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1976d2;
+        }
+        .search-demo {
+            margin: 20px 0;
+            padding: 20px;
+            background: #fff3cd;
+            border-radius: 8px;
+        }
+        .search-input {
+            width: 300px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Opportunities API Demo</h1>
+        
+        <div class="stats" id="stats">
+            <div class="stat-card">
+                <div class="stat-number" id="totalOpportunities">-</div>
+                <div>Total Opportunities</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="totalCategories">-</div>
+                <div>Categories</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="totalCompanies">-</div>
+                <div>Companies</div>
+            </div>
+        </div>
+
+        <div class="search-demo">
+            <h3>🔍 Search Demo</h3>
+            <input type="text" class="search-input" id="searchInput" placeholder="Search opportunities...">
+            <button class="test-btn" onclick="searchOpportunities()">Search</button>
+            <div class="response" id="searchResults" style="display: none;"></div>
+        </div>
+
+        <h2>📡 API Endpoints</h2>
+
+        <div class="endpoint">
+            <h3><span class="method">GET</span> Get All Opportunities</h3>
+            <div class="url">/api/opportunities</div>
+            <p>Returns all job opportunities with optional filtering</p>
+            <p><strong>Query Parameters:</strong> category, subcategory, type, experience</p>
+            <button class="test-btn" onclick="testEndpoint('/api/opportunities', 'allOpportunities')">Test</button>
+            <div class="response" id="allOpportunities" style="display: none;"></div>
+        </div>
+
+        <div class="endpoint">
+            <h3><span class="method">GET</span> Get Opportunities by Category</h3>
+            <div class="url">/api/opportunities/category/{category}</div>
+            <p>Returns opportunities filtered by category (tech, career, education, managers, non-tech)</p>
+            <button class="test-btn" onclick="testEndpoint('/api/opportunities/category/tech', 'techOpportunities')">Test (Tech)</button>
+            <div class="response" id="techOpportunities" style="display: none;"></div>
+        </div>
+
+        <div class="endpoint">
+            <h3><span class="method">GET</span> Get Single Opportunity</h3>
+            <div class="url">/api/opportunities/{id}</div>
+            <p>Returns a specific opportunity by ID</p>
+            <button class="test-btn" onclick="testEndpoint('/api/opportunities/xai_001', 'singleOpportunity')">Test (xAI Job)</button>
+            <div class="response" id="singleOpportunity" style="display: none;"></div>
+        </div>
+
+        <div class="endpoint">
+            <h3><span class="method">GET</span> Get All Categories</h3>
+            <div class="url">/api/categories</div>
+            <p>Returns all available job categories with descriptions</p>
+            <button class="test-btn" onclick="testEndpoint('/api/categories', 'categories')">Test</button>
+            <div class="response" id="categories" style="display: none;"></div>
+        </div>
+
+        <div class="endpoint">
+            <h3><span class="method">GET</span> Search Opportunities</h3>
+            <div class="url">/api/search?q={term}</div>
+            <p>Search opportunities by title, company, description, or skills</p>
+            <button class="test-btn" onclick="testEndpoint('/api/search?q=python', 'searchPython')">Test (Python)</button>
+            <div class="response" id="searchPython" style="display: none;"></div>
+        </div>
+
+        <div class="endpoint">
+            <h3><span class="method">GET</span> Get Statistics</h3>
+            <div class="url">/api/stats</div>
+            <p>Returns statistics about opportunities and categories</p>
+            <button class="test-btn" onclick="testEndpoint('/api/stats', 'stats')">Test</button>
+            <div class="response" id="stats" style="display: none;"></div>
+        </div>
+
+        <div class="endpoint">
+            <h3><span class="method">GET</span> Get Companies</h3>
+            <div class="url">/api/companies</div>
+            <p>Returns list of all companies with opportunities</p>
+            <button class="test-btn" onclick="testEndpoint('/api/companies', 'companies')">Test</button>
+            <div class="response" id="companies" style="display: none;"></div>
+        </div>
+
+        <div class="endpoint">
+            <h3><span class="method">GET</span> Get Opportunities by Company</h3>
+            <div class="url">/api/companies/{company}/opportunities</div>
+            <p>Returns all opportunities for a specific company</p>
+            <button class="test-btn" onclick="testEndpoint('/api/companies/Mercor/opportunities', 'mercorOpportunities')">Test (Mercor)</button>
+            <div class="response" id="mercorOpportunities" style="display: none;"></div>
+        </div>
+
+        <h2>🛠 Usage Examples</h2>
+        <div class="endpoint">
+            <h4>Filter by Category and Type:</h4>
+            <div class="url">/api/opportunities?category=tech&type=contract</div>
+            <button class="test-btn" onclick="testEndpoint('/api/opportunities?category=tech&type=contract', 'filtered')">Test</button>
+            <div class="response" id="filtered" style="display: none;"></div>
+        </div>
+
+        <div class="endpoint">
+            <h4>Search for Specific Skills:</h4>
+            <div class="url">/api/search?q=JavaScript</div>
+            <button class="test-btn" onclick="testEndpoint('/api/search?q=JavaScript', 'jsSearch')">Test</button>
+            <div class="response" id="jsSearch" style="display: none;"></div>
+        </div>
+    </div>
+
+    <script>
+        // Load initial stats
+        loadStats();
+
+        async function testEndpoint(endpoint, responseId) {
+            const responseElement = document.getElementById(responseId);
+            responseElement.style.display = 'block';
+            responseElement.textContent = 'Loading...';
+            
+            try {
+                const response = await fetch(endpoint);
+                const data = await response.json();
+                responseElement.textContent = JSON.stringify(data, null, 2);
+            } catch (error) {
+                responseElement.textContent = `Error: ${error.message}`;
+            }
+        }
+
+        async function loadStats() {
+            try {
+                const [statsResponse, categoriesResponse, companiesResponse] = await Promise.all([
+                    fetch('/api/stats'),
+                    fetch('/api/categories'),
+                    fetch('/api/companies')
+                ]);
+                
+                const stats = await statsResponse.json();
+                const categories = await categoriesResponse.json();
+                const companies = await companiesResponse.json();
+                
+                document.getElementById('totalOpportunities').textContent = stats.totalOpportunities;
+                document.getElementById('totalCategories').textContent = categories.length;
+                document.getElementById('totalCompanies').textContent = companies.length;
+            } catch (error) {
+                console.error('Error loading stats:', error);
+            }
+        }
+
+        async function searchOpportunities() {
+            const query = document.getElementById('searchInput').value;
+            if (!query.trim()) return;
+            
+            const resultsElement = document.getElementById('searchResults');
+            resultsElement.style.display = 'block';
+            resultsElement.textContent = 'Searching...';
+            
+            try {
+                const response = await fetch(`/api/search?q=${encodeURIComponent(query)}`);
+                const data = await response.json();
+                resultsElement.textContent = JSON.stringify(data, null, 2);
+            } catch (error) {
+                resultsElement.textContent = `Error: ${error.message}`;
+            }
+        }
+
+        // Allow Enter key to trigger search
+        document.getElementById('searchInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                searchOpportunities();
+            }
+        });
+    </script>
+</body>
+</html>

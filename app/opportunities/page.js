@@ -318,6 +318,7 @@ export default function OpportunitiesPage() {
           <div className={styles.footerSection}>
             <h4>Support</h4>
             <Link href="/privacy" className={styles.footerLink}>Privacy Policy</Link>
+            <Link href="/terms" className={styles.footerLink}>Terms of Service</Link>
           </div>
         </div>
         <div className={styles.footerBottom}>

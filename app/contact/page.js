@@ -212,6 +212,7 @@ export default function Contact() {
             <div className={styles.footerSection}>
               <h4>Support</h4>
               <a href="/privacy" className={styles.footerLink}>Privacy Policy</a>
+              <a href="/terms" className={styles.footerLink}>Terms of Service</a>
             </div>
           </div>
           <div className={styles.footerBottom}>
