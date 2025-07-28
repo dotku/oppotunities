@@ -1,0 +1,61 @@
+name: Daily Opportunities Update
+
+on:
+  schedule:
+    # Run every day at 2 AM UTC
+    - cron: '0 2 * * *'
+  workflow_dispatch: # Allow manual triggering
+
+jobs:
+  update-opportunities:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run daily update
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          WEBHOOK_SECRET: ${{ secrets.WEBHOOK_SECRET }}
+        run: node scripts/daily-update.js
+
+      - name: Call Supabase Function
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+        run: |
+          curl -X POST "$SUPABASE_URL/functions/v1/daily-data-update" \
+            -H "Authorization: Bearer $SUPABASE_ANON_KEY" \
+            -H "Content-Type: application/json" \
+            -d '{"source": "github_actions", "timestamp": "'$(date -u +%Y-%m-%dT%H:%M:%SZ)'"}'
+
+      - name: Verify update
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+        run: |
+          # Check if the update was successful
+          RESPONSE=$(curl -s "$SUPABASE_URL/rest/v1/update_logs?select=*&action=eq.daily_update&order=timestamp.desc&limit=1" \
+            -H "apikey: $SUPABASE_ANON_KEY" \
+            -H "Authorization: Bearer $SUPABASE_ANON_KEY")
+          
+          echo "Latest update log: $RESPONSE"
+          
+          # Check if the response contains a successful update
+          if echo "$RESPONSE" | grep -q '"status":"success"'; then
+            echo "✅ Daily update completed successfully"
+          else
+            echo "❌ Daily update may have failed"
+            exit 1
+          fi
