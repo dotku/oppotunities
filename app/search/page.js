@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { 
@@ -19,7 +19,8 @@ import {
 } from 'lucide-react';
 import styles from './search.module.css';
 
-export default function SearchPage() {
+// Separate component that uses useSearchParams
+function SearchContent() {
   const searchParams = useSearchParams();
   const [searchResults, setSearchResults] = useState([]);
   const [relatedJobs, setRelatedJobs] = useState([]);
@@ -435,5 +436,29 @@ export default function SearchPage() {
         </section>
       </div>
     </div>
+  );
+}
+
+// Loading component for Suspense fallback
+function SearchLoading() {
+  return (
+    <div className={styles.container}>
+      <div className={styles.main}>
+        <div className={styles.loadingState}>
+          <Search className={styles.loadingIcon} />
+          <h2>Loading search results...</h2>
+          <p>Please wait while we find the best opportunities for you</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// Main page component with Suspense boundary
+export default function SearchPage() {
+  return (
+    <Suspense fallback={<SearchLoading />}>
+      <SearchContent />
+    </Suspense>
   );
 }
