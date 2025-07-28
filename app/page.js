@@ -121,7 +121,7 @@ export default function Home() {
               <div className={styles.statLabel}>Job Categories</div>
             </div>
             <div className={styles.statCard}>
-              <div className={styles.statNumber}>Remote+</div>
+              <div className={styles.statNumber}>{stats.totalLocations}+</div>
               <div className={styles.statLabel}>Locations</div>
             </div>
           </div>
