@@ -2,7 +2,7 @@
 
 All indian position (remote).
 
-## Highlighted
+## Sponsor
 
 * [Senior Full-Stack Engineer: India ($1.1K - $1.6K / week)](https://work.mercor.com/jobs/list_AAABmB8bA7Yu0EM4vgpHt6Jf?referralCode=3fef9c0a-6735-48e0-a9cb-185c8013a734&utm_source=referral&utm_medium=share&utm_campaign=job_referral)
 
